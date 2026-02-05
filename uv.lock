@@ -80,6 +80,7 @@ name = "aw1"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "huggingface-hub" },
     { name = "ipykernel" },
     { name = "openai" },
     { name = "pillow" },
@@ -92,6 +93,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "huggingface-hub", specifier = ">=1.4.0" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "openai", specifier = ">=2.16.0" },
     { name = "pillow", specifier = ">=12.1.0" },
